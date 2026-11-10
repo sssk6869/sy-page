@@ -3,58 +3,86 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="나만의 시선으로 순간을 영상에 담는 영상 편집자 수연의 포트폴리오입니다.">
   <title>SY | Video Editor Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#home">SY</a>
-    <nav aria-label="주요 메뉴">
-      <a href="#home">HOME</a>
-      <a href="#about">ABOUT</a>
-      <a href="#work">WORK</a>
+  <header class="topbar">
+    <a class="logo" href="#home" aria-label="SY 홈">SY</a>
+    <nav aria-label="메인 메뉴">
+      <a class="active" href="#home">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="#works">WORK</a>
       <a href="#contact">CONTACT</a>
     </nav>
   </header>
 
-  <main>
-    <section id="home" class="page-section home-section">
-      <p class="eyebrow">VIDEO EDITOR PORTFOLIO</p>
-      <h1>Turning moments<br>into stories</h1>
-      <p class="intro">나만의 시선으로 순간을 영상에 담습니다.</p>
-      <img src="assets/home.png" alt="HOME 페이지 디자인 시안" class="design-image home-image">
-    </section>
-
-    <section id="about" class="page-section">
-      <div class="section-heading">
-        <span>ABOUT ME / 01</span>
-        <h2>MY STORY</h2>
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">VIDEO EDITOR PORTFOLIO</p>
+        <h1>Turning moments<br>into stories</h1>
+        <p class="hero-desc">나만의 시선으로 순간을 영상에 담습니다.</p>
+        <a class="pill-button" href="#featured">더보기 <span aria-hidden="true">→</span></a>
       </div>
-      <img src="assets/about-story.png" alt="유령 캐릭터와 자기소개 디자인 시안" class="design-image">
-      <img src="assets/about-tools.png" alt="사용 가능한 편집 및 디자인 프로그램" class="design-image tools-image">
+      <img class="hero-ghost" src="assets/ghost-camera.png" alt="카메라를 든 유령 캐릭터">
     </section>
 
-    <section id="work" class="page-section">
-      <div class="section-heading">
-        <span>PORTFOLIO / 03</span>
+    <section class="hello">
+      <img src="assets/ghost-wave.png" alt="반갑게 인사하는 유령 캐릭터">
+      <p>안녕하세요!<br>일상의 작은 순간을 감각적인 영상으로<br class="desktop-only"> 담아내는 영상 편집자 수연입니다.</p>
+    </section>
+
+    <section class="projects-panel" id="featured">
+      <div class="section-title">
+        <span>01</span>
+        <h2>FEATURED PROJECT</h2>
+      </div>
+      <a class="featured-card" href="#works">
+        <img src="assets/starbucks-project.png" alt="스타벅스 커피 광고 영상 프로젝트">
+        <div class="featured-caption">
+          <strong>STARBUCKS</strong>
+          <span>Brand Film · 2026</span>
+        </div>
+      </a>
+
+      <div class="section-title works-title" id="works">
+        <span>02</span>
         <h2>SELECTED WORKS</h2>
       </div>
-      <img src="assets/work.png" alt="영상 프로젝트 갤러리 디자인 시안" class="design-image">
+      <div class="work-grid">
+        <a class="work-card" href="#contact">
+          <img src="assets/nespresso-project.png" alt="네스프레소 캡슐 제품 영상">
+          <div><strong>NESPRESSO</strong><span>팀 프로젝트</span></div>
+        </a>
+        <a class="work-card" href="#contact">
+          <img src="assets/jeju-project.png" alt="제주 여행 영상">
+          <div><strong>JEJU</strong><span>여행 영상</span></div>
+        </a>
+        <a class="work-card" href="#contact">
+          <img src="assets/ghost-intro-project.png" alt="유령 캐릭터 인트로 애니메이션">
+          <div><strong>GHOST INTRO</strong><span>캐릭터 모션</span></div>
+        </a>
+        <a class="work-card" href="#contact">
+          <img src="assets/personal-film-project.png" alt="개인 영상 작업">
+          <div><strong>PERSONAL FILM</strong><span>개인 작업</span></div>
+        </a>
+      </div>
     </section>
 
-    <section id="contact" class="contact-section">
-      <div>
-        <span class="eyebrow">LET'S WORK TOGETHER</span>
-        <h2>함께 좋은 이야기를 만들어가고 싶습니다.</h2>
-        <p>새로운 프로젝트와 협업 제안은 언제든 환영합니다.</p>
+    <section class="contact" id="contact">
+      <div class="contact-message">
+        <p>함께 좋은 이야기를 만들어가고 싶습니다.</p>
+        <p>새로운 프로젝트와 협업 제안은 언제든 환영합니다.<br>편하게 연락해 주세요!</p>
       </div>
-      <div class="contact-details">
-        <p><b>PHONE</b><br>010-0000-0000</p>
-        <p><b>E-MAIL</b><br><a href="mailto:your@gmail.com">your@gmail.com ↗</a></p>
-        <p><b>SNS</b><br><a href="#">Instagram ↗</a></p>
+      <div class="contact-list">
+        <div><span>PHONE</span><a href="tel:01000000000">010-0000-0000</a></div>
+        <div><span>E-MAIL</span><a href="mailto:your@gmail.com">your@gmail.com ↗</a></div>
+        <div><span>SNS</span><a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a></div>
       </div>
     </section>
   </main>
-  <footer>© SY — VIDEO EDITOR PORTFOLIO</footer>
+  <footer>© 2026 SY · VIDEO EDITOR PORTFOLIO</footer>
 </body>
 </html>
